@@ -15,6 +15,9 @@ function buscarTweets() {
         } else if (opcion.value == "messi") {
             const searchQuery = `https://twitter.com/search?q=from%3A${twitterUsername}%20messi%20until%3A2021-01-01`
             window.open(searchQuery, '_blank')
+        } else if (opcion.value == "electoral") {
+            const searchQuery = `https://twitter.com/search?q=from%3A${twitterUsername}%20%28milei%20OR%20massa%20OR%20larreta%20OR%20bullrich%29`
+            window.open(searchQuery, '_blank')
         } else if (opcion.value == "seleccione") {
             alert("Seleccioná una opción para el carpetazo")
         }
