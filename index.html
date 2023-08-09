@@ -1,26 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Buscar Tweets</title>
+    <title>Carpetazo</title>
 </head>
 <body>
-    <h1>Carpetazo</h1>
-    <label for="twitterUsername">Usuario de Twitter:</label>
-    <input type="text" id="twitterUsername" placeholder="@"/>
-    <br>
-    <label for="filtros">Carpetear por: </label>
-    <select name="" id="filtros">
-        <option value="seleccione" disabled selected>Seleccioná...</option>
-        <option value="machistas">Tweets machistas</option>
-        <option value="homofob">Tweets homofóbicos</option>
-        <option value="racistas">Tweets racistas</option>
-        <option value="messi">Tweets anti-Messi pre 2021</option>
-        <option value="electoral">[ESPECIAL] Electoral</option>
-    </select>
-    <button onclick="buscarTweets()">Carpetear</button>
+    <section class="background-video-container">
+        <video autoplay loop muted class="background-video">
+            <source src="https://i.imgur.com/JhmbAns.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+    </section>
+    
+    <section class="main-content">
+        <div class="form-container">
+            <div class="form">
+                <label for="twitterUsername">Usuario de Twitter:</label>
+                <div class="input-container">
+                    <input type="text" id="twitterUsername" placeholder="@">
+                </div>
+            </div>
+            <div class="form">
+                <label for="filtros">Carpetear por:</label>
+                <div class="input-container">
+                    <select id="filtros">
+                        <option value="seleccione" disabled selected>Selecciona...</option>
+                        <option value="machistas">Tweets machistas</option>
+                        <option value="homofob">Tweets homofóbicos</option>
+                        <option value="racistas">Tweets racistas</option>
+                        <option value="messi">Tweets anti-Messi pre 2021</option>
+                        <option value="electoral">[ESPECIAL] Electoral</option>
+                    </select>
+                </div>
+            </div>
+            <div class="button-container">
+                <button onclick="buscarTweets()">Carpetear</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social-links">
+		    <a href="https://www.instagram.com/megro.ar/" class="social-link">Instagram</a>
+            <a href="https://twitter.com/bauchaer" class="social-link">Twitter</a>
+            <a href="https://www.instagram.com/notbauti" class="social-link">Instagram</a>
+        </div>
+        <p>&copy; 2023 Carpetazo. Todos los derechos robados.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
